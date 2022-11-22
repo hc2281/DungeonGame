@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-
-public class NewBehaviourScript1 : MonoBehaviour
+public class Slot : MonoBehaviour, IDropHandler
 {
-    //stores what item is inside
-    public Item item;
-    //
-    public int index;
+
+    public void OnDrop(PointerEventData eventData){
+        Debug.Log("Dropped item");
+        if (eventData.pointerDrag != null) {
+            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+        }
+    }
+
 }
