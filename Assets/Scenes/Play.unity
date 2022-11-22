@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 458970660}
   - component: {fileID: 458970659}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 774684818}
   - component: {fileID: 774684817}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318,8 +318,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00038004, y: -200.0502}
-  m_SizeDelta: {x: 1265, y: 113.8995}
+  m_AnchoredPosition: {x: -5.7041, y: -186.7416}
+  m_SizeDelta: {x: 1276.4072, y: 140.5167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &774684817
 MonoBehaviour:
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 1913373822}
   - component: {fileID: 1913373821}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,7 +565,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517, y: -118}
+  m_AnchoredPosition: {x: -0.000030517, y: -104}
   m_SizeDelta: {x: 223.4069, y: 184.6219}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913373821

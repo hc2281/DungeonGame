@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CraftingManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Stores item that's being dropped
+    private Item currentItem;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    public void OnMouseDownItem(Item item){
+        if(currentItem == null){
+            currentItem = item;
+        }
+    } 
 }
