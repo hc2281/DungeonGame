@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Slot : MonoBehaviour, IDropHandler
 {
-
+    // Function used when item is dropped in cauldron
     public void OnDrop(PointerEventData eventData){
         Debug.Log("Dropped item");
         if (eventData.pointerDrag != null) {
