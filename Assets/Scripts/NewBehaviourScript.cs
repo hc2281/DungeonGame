@@ -19,6 +19,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     public void Jump()
     {
-        SceneManager.LoadScene(1); // 1 is the code of the play scene
+        SceneManager.LoadScene(2); // 2 means the scene of the video
     }
 }
