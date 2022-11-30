@@ -5,11 +5,8 @@ using UnityEngine;
 public class Newslot : MonoBehaviour
 {
 
-
     public Item item;
     public int index;
 
-    
-   
    
 }
