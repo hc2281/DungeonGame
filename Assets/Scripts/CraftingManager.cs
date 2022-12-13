@@ -18,6 +18,7 @@ public class CraftingManager : MonoBehaviour
 
     private void Update()
     {
+        //when mouse lifts up the current item it's holding gets put into the nearest slot on the screen
         if (Input.GetMouseButtonUp(0)){
             if (currentItem != null){
                 customCursor.gameObject.SetActive(false);
@@ -32,6 +33,7 @@ public class CraftingManager : MonoBehaviour
                         nearestSlot = slot;
                     }
                 }
+                //changes slot component to display the sprite of the dropped item
                 nearestSlot.gameObject.SetActive(true);
                 nearestSlot.GetComponent<Image>().sprite = currentItem.GetComponent<Image>().sprite;
                 nearestSlot.item = currentItem;
@@ -65,6 +67,7 @@ public class CraftingManager : MonoBehaviour
         }
     }
 
+    //if you click on the item it should remove it from slot
     public void OnClickSlot(Newslot slot){
         slot.item = null;
         itemList[slot.index] = null;
@@ -72,7 +75,14 @@ public class CraftingManager : MonoBehaviour
         CheckForCreatedRecipes();
     }
 
-    // Takes in a parameter when item
+    //if you click on the new item it should add to the shelf
+    public void OnClickResultSlot(Newslot result){
+        if (result.item != null){
+            result.item.gameObject.SetActive(true);
+        }
+    }
+
+    //cursor becomes the object sprite which can be dragged around
     public void OnMouseDownItem(Item item){
         if(currentItem == null){
             currentItem = item;
