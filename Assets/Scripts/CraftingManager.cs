@@ -10,11 +10,13 @@ public class CraftingManager : MonoBehaviour
     public Image customCursor;
 
     public Newslot[] craftingSlots;
+    public Newslot resultSlot;
+    public Item FinalButton;
 
     public List<Item> itemList;
     public string[] recipes;
     public Item[] recipeResults;
-    public Newslot resultSlot;
+
 
     private void Update()
     {
@@ -63,6 +65,9 @@ public class CraftingManager : MonoBehaviour
                 resultSlot.gameObject.SetActive(true);
                 resultSlot.GetComponent<Image>().sprite = recipeResults[i].GetComponent<Image>().sprite;
                 resultSlot.item = recipeResults[i];
+                if (resultSlot.item.itemName == "Potion"){
+                    FinalButton.gameObject.SetActive(true);
+                }
             }
         }
     }

@@ -7,5 +7,4 @@ using UnityEngine.UI;
 public class Item : MonoBehaviour
 {
     public string itemName; 
-    public string attribute;
 }
