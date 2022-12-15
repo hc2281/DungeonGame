@@ -968,6 +968,7 @@ MonoBehaviour:
   - {fileID: 40838454}
   - {fileID: 281925046}
   resultSlot: {fileID: 1543785650}
+  FinalButton: {fileID: 0}
   itemList:
   - {fileID: 0}
   - {fileID: 0}
@@ -1831,7 +1832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &951587067
 RectTransform:
   m_ObjectHideFlags: 0
