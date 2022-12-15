@@ -19,7 +19,7 @@ public class LoadPlay : MonoBehaviour
         countTime += Time.deltaTime;
         if (countTime > 24.0f)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(1); //loads play scene
         }
     }
 

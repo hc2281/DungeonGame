@@ -19,7 +19,7 @@ public class LoadMenu : MonoBehaviour
         countTime += Time.deltaTime;
         if (countTime > 15.0f)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0); //loads menu screen
         }
     }
 

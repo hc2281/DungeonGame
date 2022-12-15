@@ -19,6 +19,6 @@ public class Ending1 : MonoBehaviour
 
     public void Jump()
     {
-        SceneManager.LoadScene(3); // 2 means the scene of the video
+        SceneManager.LoadScene(3); //loads ending scene
     }
 }

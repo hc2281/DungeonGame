@@ -968,7 +968,7 @@ MonoBehaviour:
   - {fileID: 40838454}
   - {fileID: 281925046}
   resultSlot: {fileID: 1543785650}
-  FinalButton: {fileID: 0}
+  FinalButton: {fileID: 951587072}
   itemList:
   - {fileID: 0}
   - {fileID: 0}
@@ -1826,6 +1826,7 @@ GameObject:
   - component: {fileID: 951587070}
   - component: {fileID: 951587069}
   - component: {fileID: 951587068}
+  - component: {fileID: 951587072}
   m_Layer: 5
   m_Name: SERVE
   m_TagString: Untagged
@@ -1960,6 +1961,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951587066}
   m_CullTransparentMesh: 1
+--- !u!114 &951587072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951587066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596a08dfb1f4e70448f0e17c63a503fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: FinalButton
 --- !u!1 &954198209
 GameObject:
   m_ObjectHideFlags: 0
