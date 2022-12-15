@@ -4,22 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class video : MonoBehaviour
+public class LoadMenu : MonoBehaviour
 {
-    public float countTime = 0f;
+    private float countTime = 0f;
 
     // Update is called once per frame
     void Update()
     {
         CountTime();   
     }
-
+    //if counttime passes, the scene will load into loadscene
     void CountTime()
     {
         countTime += Time.deltaTime;
-        if (countTime > 24.0f)
+        if (countTime > 15.0f)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 
