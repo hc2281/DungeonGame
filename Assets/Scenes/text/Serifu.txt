@@ -1,0 +1,4 @@
+Welcome to my dungeon! 
+I kidnapped you to make a potion for myself. 
+Use the cauldron to make new ingredients and create a potion. 
+If you cannot make it in 3 min, then consider yourself dead.
